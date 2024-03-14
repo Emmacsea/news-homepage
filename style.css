@@ -110,9 +110,12 @@ body, html {
     font-size: 2.2em;
     font-weight: 800;
     color: hsl(240, 100%, 5%);
-    padding: 0 3em .5em 0;
-    
-    
+    padding: 0 2em .5em 0;  
+    @font-face {
+        font-family: "Inter";
+        src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    };
+    font-family: "Inter Bold.ttf";
 }
 
 .left-right {
@@ -131,7 +134,7 @@ body, html {
     color: hsl(36, 100%, 99%);
     text-transform: uppercase;
     padding: 10px 30px;
-    margin-top: 1.82em;
+    margin-top: 1.85em;
     cursor: pointer;
 }
 
