@@ -1,3 +1,16 @@
+@font-face {
+    font-family: Inter-Bold;
+    src: url('assets/fonts/static/Inter-Bold.ttf');
+}
+@font-face {
+    font-family: Inter-ExtraBold;
+    src: url('assets/fonts/static/Inter-ExtraBold.ttf');
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url('assets/fonts/static/Inter-Regular.ttf');
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +24,7 @@ body, html {
     place-items: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
 }
 
 /* .container {
@@ -28,9 +42,6 @@ body, html {
 .head {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    top: 0;
-    left: 0;
     align-items: center;
     width: 100%;
     padding: 2em 9.1em 1.2em;
@@ -58,7 +69,7 @@ body, html {
 .details {
     /* width: 1350px; */
     width: auto;
-    /* height: auto; */
+    
     height: 370px;
     display: flex;
     justify-content: space-between;
@@ -111,11 +122,8 @@ body, html {
     font-weight: 800;
     color: hsl(240, 100%, 5%);
     padding: 0 2em .5em 0;  
-    @font-face {
-        font-family: "Inter";
-        src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
-    };
-    font-family: "Inter Bold.ttf";
+   
+    font-family: Inter-ExtraBold;
 }
 
 .left-right {
@@ -124,7 +132,8 @@ body, html {
 
 .left-right p {
     color: hsl(236, 13%, 42%);
-    width: 87%;
+    font-family: Inter-Regular;
+    font-size: 1em;
 }
 
 .left-right button {
@@ -153,6 +162,7 @@ body, html {
 .right h2 {
     font-size: 2em;
     color: hsl(35, 77%, 62%);
+    font-family: Inter-Regular;
 }
 
 .right .h{
@@ -161,11 +171,12 @@ body, html {
 }
 
 .h h3{
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 400;
+    font-family: Inter-Bold;
     color: hsl(36, 100%, 99%);
     padding-bottom: .2em;
-    padding-top: .56em;
+    padding-top: .54em;
 }
 
 .h h3:hover {
@@ -175,8 +186,9 @@ body, html {
 
 .h p{
     color: hsl(236, 13%, 42%);
-    font-size: .95em;
+    font-size: .86em;
     font-weight: 400;
+    font-family: Inter-Regular;
 }
 
 .line {
@@ -209,7 +221,7 @@ body, html {
 .foot .foo{
     display: flex;
     flex-direction: column;   
-    gap: 9px;
+    gap: 8px;
 }
 
 .foo span{
@@ -239,4 +251,12 @@ body, html {
 .attribution a {
     text-decoration: none;
     color: hsl(228, 45%, 44%)
+}
+
+@media screen and (max-width: 650px) {
+   .nav-bar {
+        display: none;
+   }
+
+
 }
